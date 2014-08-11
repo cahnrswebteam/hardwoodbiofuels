@@ -5,6 +5,10 @@ class ahb_site_settings{
 		$this->url = \get_stylesheet_directory_uri();
 		add_action( 'wp_enqueue_scripts', array( $this , 'init_theme_scripts' ) );
 		add_action( 'widgets_init', array( $this , 'add_sidebars' ) );
+		
+		if ( !is_admin() ){
+			\add_action( 'template_redirect', array( $this , 'ahb_redirect' ) );
+		}
 	}
 	
 	public function init_theme_scripts(){
@@ -103,6 +107,20 @@ class ahb_site_settings{
 			register_sidebar( $sidebar );
 		}
 	}
+	
+	public function ahb_redirect(){
+		 global $post; // GET GLOBAL POST OBJ
+		 $redirect_types = array( 'page','post'); // TYPES TO REDIRECT
+		 if( in_array( $post->post_type , $redirect_types ) ) { // CHECK IF TYPE
+		 	if( ( is_singular('post') || is_singular( 'page') ) && is_main_query() ){ // CHECK IF SINGULAR
+				$meta = \get_post_meta( $post->ID , '_redirect_to' , true ); // GET META
+			 	if( $meta ){ // IF META EXISTS
+				 	\wp_redirect( $meta , 302 ); // DO REDIRECT
+			 	} // END IF
+			} // END IF
+		 } // END IF
+	 }
+	
 }
 $init_ahb = new ahb_site_settings();
 $init_ahb->init();?>
