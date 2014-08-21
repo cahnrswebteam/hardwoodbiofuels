@@ -17,16 +17,21 @@ img { border: 0;}
 }
 
 #primary-content h1 {
-font-size: 2em;
+font-size: 1.6rem;
 margin: 5px 0;
 padding: 0;
 font-weight: normal;
 color: #0070c0;
+line-height: 1.8rem;
 }
 
 /*main a {
 	font-size: 13px;
 }*/
+main {
+	width: auto;
+	overflow: hidden;
+}
 
 main a {
 	color: rgb(0, 75, 145);
@@ -53,12 +58,8 @@ main .pagebuilder-column.pagebuilder-column-1 article {
 
 
 section#site-column-left {
-	position: absolute;
-	top: 25px;
-	left: 0;
+	float: left;
 	width: 200px;
-	height: 100%;
-	overflow: auto;
 }
 
 /************* SECONDARY NAV ******************/
@@ -282,6 +283,15 @@ ul.cahnrs-list-view .list-title {
 ul.cahnrs-list-view .list-excerpt {
 	color: #555;
 }
+
+/** Audience Styling **/
+.educators .cahnrs-slide .caption { background:#5f4894 }
+.policy-makers .cahnrs-slide .caption { background:#e66a1f }
+.landowners .cahnrs-slide .caption { background:#3b76a3 }
+.extension-audience .cahnrs-slide .caption { background:#a97b50 }
+.related .cahnrs-slide .caption { background:#81a230 }
+.espanol .cahnrs-slide .caption { background:#d71920 }
+
 
 @media ( max-width: 960px ) {
  	#primary-content.content-wrap { width: 98%; margin: 0 auto;}

@@ -9,11 +9,26 @@ header.primary .logo {display: block; width: 100%; height: auto;}
 header.primary .sub-logo {display: inline-block; width: 19.9%; vertical-align: top;}
 header.primary nav.primary {position: relative;  color: #555; text-transform: uppercase;}
 header.primary .primary-nav ul {display: none;}
-header.primary .primary-nav {display: inline-block; width: 80%; vertical-align: top; position: relative;}
-header.primary .primary-nav > .menu-item {display: inline-block; vertical-align: top; position: relative;}
+header.primary .primary-nav {display: inline-block; width: 80%; vertical-align: top; position: relative; font-size: 0; margin-left: -50px;}
+header.primary .primary-nav > .menu-item {display: inline-block; vertical-align: top; position: relative; font-size: 0.85rem; }
 header.primary .primary-nav > .menu-item > a {display: block; padding: 20px 15px; color:#333;}
 header.primary .primary-nav > .menu-item.home > a {padding: 0;}
 header.primary .primary-nav > .menu-item.home > a img { height: 56px; width: auto;}
+header.primary .primary-nav > .menu-item-home {
+	max-width: 50px;
+}
+header.primary .primary-nav > .menu-item-home > a  {
+	padding: 18px 15px 22px;
+}
+header.primary .primary-nav > .menu-item-home > a > span {
+	display: block;
+	width: 20px;
+	font-size: 0px;
+	min-height: 20px;
+	background-image:url(../images/home-2.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	}
 
 header.primary .primary-nav > li > ul {
 	display: none; position: absolute; top: 100%; left: 0; width: 200px; background: #86a333; z-index: 300; 
