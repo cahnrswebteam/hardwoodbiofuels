@@ -20,7 +20,7 @@ body {
 abbr,article,aside,audio,bb,canvas,datagrid,
 datalist,details,dialog,eventsource,figure,
 footer,header,hgroup,mark,menu,meter,nav,output,
-progress,section,time,video {
+progress,section,time,video,main {
 	display: block;
 }
 

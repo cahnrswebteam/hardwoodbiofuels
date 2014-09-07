@@ -78,6 +78,22 @@ section#site-column-left {
 	background-repeat: no-repeat;
 	background-position: bottom right;
 	}
+
+.feedstock #secondary-navigation-menu > li > a { 
+	background-image: url(../images/leaf-icons/feedstock.png);   no-repeat bottom right;
+	}
+.conversion #secondary-navigation-menu > li > a { 
+	background-image: url(../images/leaf-icons/conversion.png) no-repeat bottom right;; 
+	}
+.extension #secondary-navigation-menu > li > a { 
+	background-image: url(../images/leaf-icons/extension.png) no-repeat bottom right;; 
+	}
+.education #secondary-navigation-menu > li > a { 
+	background-image: url(../images/leaf-icons/education.png) no-repeat bottom right;; 
+	}
+.sustainability #secondary-navigation-menu > li > a { 
+	background-image: url(../images/leaf-icons/sustainability.png) no-repeat bottom right;; 
+	}
 	
 .educators #secondary-navigation-menu > li > a { 
 	color: #fff; 
@@ -102,22 +118,11 @@ section#site-column-left {
 .espanol #secondary-navigation-menu > li > a { 
 	color: #fff; background:#d71920 url(../images/icons/espanol.png) no-repeat bottom right;
 	}
+.environment-audience #secondary-navigation-menu > li > a { 
+	color: #fff; background:#324da4 url(../images/icons/environment.png) no-repeat bottom right;
+	}
 	
-.feedstock #secondary-navigation-menu > li > a { 
-	background-image: url(../images/leaf-icons/feedstock.png);   no-repeat bottom right;
-	}
-.conversion #secondary-navigation-menu > li > a { 
-	background-image: url(../images/leaf-icons/conversion.png) no-repeat bottom right;; 
-	}
-.extension #secondary-navigation-menu > li > a { 
-	background-image: url(../images/leaf-icons/extension.png) no-repeat bottom right;; 
-	}
-.education #secondary-navigation-menu > li > a { 
-	background-image: url(../images/leaf-icons/education.png) no-repeat bottom right;; 
-	}
-.sustainability #secondary-navigation-menu > li > a { 
-	background-image: url(../images/leaf-icons/sustainability.png) no-repeat bottom right;; 
-	}
+
 
 #secondary-navigation-menu > li > ul { font-size: 1.2em; margin: 0; padding-top: 10px;}
 #secondary-navigation-menu > li > ul > li a { padding: 4px 8px 4px 20px; }
@@ -291,6 +296,7 @@ ul.cahnrs-list-view .list-excerpt {
 .extension-audience .cahnrs-slide .caption { background:#a97b50 }
 .related .cahnrs-slide .caption { background:#81a230 }
 .espanol .cahnrs-slide .caption { background:#d71920 }
+.environment-audience .cahnrs-slide .caption { background:#324da4 }
 
 
 @media ( max-width: 960px ) {
