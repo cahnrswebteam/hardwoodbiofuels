@@ -28,6 +28,9 @@ h4 {
 	margin: 4px;
 }
 
+.pagebuilder-row {
+	padding-bottom: 1em;
+}
 
 /** CAHNRS Core CSS **/
 .cc-title, .cc-title > a, h3, h3 > a { 
@@ -43,4 +46,54 @@ h4 {
 
 .pagbuilder-layout-aside .pagebuilder-column-1 {
 	margin-right: 200px !important;
+}
+.pagebuilder-item.audience-menu ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.pagebuilder-item.audience-menu li {
+	margin: 0;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.pagebuilder-item.audience-menu a {
+	color: #fff;
+	padding: 25px 15px;
+	display: block;
+	background: #6a90c1;
+	border-right: 3px solid #fff;
+	border-top: 3px solid #fff;
+	background-size: contain;
+	background-position: center right !important;
+}
+.pagebuilder-item.audience-menu .menu-item-4011 a {
+	border-right: none;
+}
+
+.pagebuilder-item.audience-menu a:hover {
+	opacity: 0.7;
+}
+
+.pagebuilder-item.audience-menu ul.menu > li {
+	display: block;
+	font-size: 0;
+	letter-spacing: 0;
+}
+
+.pagebuilder-item.audience-menu ul.menu > li > ul > li > ul,
+.pagebuilder-item.audience-menu ul.menu > li > a {
+	display: none;
+}
+
+.pagebuilder-item.audience-menu ul.menu > li > ul > li {
+	width: 20%;
+	font-size: 14px;
+	letter-spacing: normal;
+}
+/***** CSS Hooks ***********/
+.pagebuilder-item.marginless {
+	margin: 0 !important;
+	padding: 0 !important;
 }

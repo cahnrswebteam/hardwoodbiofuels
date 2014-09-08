@@ -95,31 +95,60 @@ section#site-column-left {
 	background-image: url(../images/leaf-icons/sustainability.png) no-repeat bottom right;; 
 	}
 	
+.pagebuilder-item.audience-menu .menu-item-3893 a,
 .educators #secondary-navigation-menu > li > a { 
 	color: #fff; 
-	background:#5f4894 url(../images/icons/educators.png) no-repeat bottom right; 
+	background-image: url(../images/icons/educators.png); 
+	background-color: #5f4894 ;
+	background-position: bottom right;
+	background-repeat: no-repeat;
 	}
+.pagebuilder-item.audience-menu .menu-item-4009 a,
 .policy-makers #secondary-navigation-menu > li > a { 
 	color: #fff; 
-	background:#e66a1f url(../images/icons/policy.png) no-repeat bottom right; 
+	background-image: url(../images/icons/policy.png); 
+	background-color: #e66a1f;
+	background-position: bottom right;
+	background-repeat: no-repeat;
 	}
 .landowners #secondary-navigation-menu > li > a { 
 	color: #fff; 
-	background:#3b76a3 url(../images/icons/landowners.png) no-repeat bottom right; 
+	background-image: url(../images/icons/landowners.png); 
+	background-color: #3b76a3;
+	background-position: bottom right;
+	background-repeat: no-repeat;
 	}
 .extension-audience #secondary-navigation-menu > li > a { 
 	color: #fff; 
-	background:#a97b50 url(../images/icons/extension.png) no-repeat bottom right;
+	background-image: url(../images/icons/extension.png);
+	background-color: #a97b50;
+	background-position: bottom right;
+	background-repeat: no-repeat;
 	}
+	
+.pagebuilder-item.audience-menu .menu-item-3894 a,
 .related #secondary-navigation-menu > li > a { 
 	color: #fff; 
-	background:#81a230 url(../images/icons/related.png) no-repeat bottom right;
+	background-image: url(../images/icons/related.png);
+	background-color: #81a230;
+	background-position: bottom right;
+	background-repeat: no-repeat;
 	}
+.pagebuilder-item.audience-menu .menu-item-4011 a,
 .espanol #secondary-navigation-menu > li > a { 
-	color: #fff; background:#d71920 url(../images/icons/espanol.png) no-repeat bottom right;
+	color: #fff; 
+	background-image: url(../images/icons/espanol.png);
+	background-color: #d71920;
+	background-position: bottom right;
+	background-repeat: no-repeat;
 	}
+.pagebuilder-item.audience-menu .menu-item-4008 a,
 .environment-audience #secondary-navigation-menu > li > a { 
-	color: #fff; background:#324da4 url(../images/icons/environment.png) no-repeat bottom right;
+	color: #fff; 
+	background-image: url(../images/icons/environment.png);
+	background-color: #324da4;
+	background-position: bottom right;
+	background-repeat: no-repeat;
 	}
 	
 
