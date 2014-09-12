@@ -47,6 +47,12 @@ h4 {
 .pagbuilder-layout-aside .pagebuilder-column-1 {
 	margin-right: 200px !important;
 }
+
+.pagebuilder-item div,
+.pagebuilder-item p {
+	max-width: 100% !important;
+}
+
 .pagebuilder-item.audience-menu ul {
 	margin: 0;
 	padding: 0;
@@ -57,6 +63,8 @@ h4 {
 	display: inline-block;
 	vertical-align: top;
 }
+
+
 
 .pagebuilder-item.audience-menu a {
 	color: #fff;

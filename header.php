@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <meta name="viewport" content="width=device-width">
-<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>?v=4" type="text/css" media="screen" />
+<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>?v=5" type="text/css" media="screen" />
 <script type='text/javascript' src='<?php echo get_template_directory_uri();?>/js/html5shiv.js?ver=1.0.0'></script>
 <?php wp_head(); ?>
 </head>
