@@ -9,6 +9,30 @@ class ahb_site_settings{
 		if ( !is_admin() ){
 			\add_action( 'template_redirect', array( $this , 'ahb_redirect' ) );
 		}
+		if ( is_admin() ) {
+    		\add_action( 'load-post.php', array( $this , 'add_metabox' ) );
+    		\add_action( 'load-post-new.php', array( $this , 'add_metabox' ) );
+		}
+	}
+	
+	public function add_metabox( $post ){
+		$redirect_screens = array( 'post', 'page' , 'feature_slides' );
+
+		foreach ( $redirect_screens as $screen ) {
+			add_meta_box(
+				'ahb_redirect'
+				,'Redirect To:'
+				,array( $this, 'render_redirect_meta_box' )
+				, $screen
+				,'normal'
+				,'high'
+			);
+		}
+	}
+	
+	public function render_redirect_meta_box( $post ){
+		$redirect_meta = get_post_meta( $post->ID , '_redirect_to', true );
+		 echo '<input type="text" style="width: 80%;" name="_redirect_to" value="'.$redirect_meta.'" />';
 	}
 	
 	public function init_theme_scripts(){
@@ -110,9 +134,9 @@ class ahb_site_settings{
 	
 	public function ahb_redirect(){
 		 global $post; // GET GLOBAL POST OBJ
-		 $redirect_types = array( 'page','post'); // TYPES TO REDIRECT
+		 $redirect_types = array( 'page' , 'post' , 'feature_slides' ); // TYPES TO REDIRECT
 		 if( in_array( $post->post_type , $redirect_types ) ) { // CHECK IF TYPE
-		 	if( ( is_singular('post') || is_singular( 'page') ) && is_main_query() ){ // CHECK IF SINGULAR
+		 	if( is_singular() && is_main_query() ){ // CHECK IF SINGULAR
 				$meta = \get_post_meta( $post->ID , '_redirect_to' , true ); // GET META
 			 	if( $meta ){ // IF META EXISTS
 				 	\wp_redirect( $meta , 302 ); // DO REDIRECT
