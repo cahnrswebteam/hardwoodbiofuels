@@ -5,6 +5,7 @@ class ahb_site_settings{
 		$this->url = \get_stylesheet_directory_uri();
 		add_action( 'wp_enqueue_scripts', array( $this , 'init_theme_scripts' ) );
 		add_action( 'widgets_init', array( $this , 'add_sidebars' ) );
+		add_action( 'init' , array( $this , 'ahbwp_init' ) );
 		
 		if ( !is_admin() ){
 			\add_action( 'template_redirect', array( $this , 'ahb_redirect' ) );
@@ -13,6 +14,12 @@ class ahb_site_settings{
     		\add_action( 'load-post.php', array( $this , 'add_metabox' ) );
     		\add_action( 'load-post-new.php', array( $this , 'add_metabox' ) );
 		}
+	}
+	
+	public function ahbwp_init(){
+		
+		\add_post_type_support( 'page', 'excerpt' );
+		
 	}
 	
 	public function add_metabox( $post ){
@@ -66,7 +73,11 @@ class ahb_site_settings{
 		// Add tag metabox to page
 		register_taxonomy_for_object_type('post_tag', 'page'); 
 		// Add category metabox to page
-		register_taxonomy_for_object_type('category', 'page');  
+		register_taxonomy_for_object_type('category', 'page'); 
+		// Add tag metabox to page
+		register_taxonomy_for_object_type('post_tag', 'video'); 
+		// Add category metabox to page
+		register_taxonomy_for_object_type('category', 'video'); 
 	}
 	
 	public function add_image_sizes(){

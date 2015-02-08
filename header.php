@@ -27,7 +27,7 @@
             <input type="submit" id="searchsubmit" value=">" class="btn">
 			<!--<div class="submit-button"></div> -->
         </form>
-    	<img class="logo" src="<?php echo get_template_directory_uri();?>/images/banner-logo.png" />
+    	<a href="http://hardwoodbiofuels.org/"><img class="logo" src="<?php echo get_template_directory_uri();?>/images/banner-logo.png" /></a>
     </div>
     <nav class="more">
     	<?php
