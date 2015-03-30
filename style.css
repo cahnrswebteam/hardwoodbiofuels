@@ -4,11 +4,15 @@ Theme URI: http://hardwoodbiofuels.org
 Author: CAHNRS Communication: Danial Bleile
 Author URI: http://wordpress.org/
 Description: Custom Theme for Advanced Hardwood Biofuels.
-Version: 1.0
+Version: 1.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
 */
+
+img {
+	border: none;
+}
 
 body {
 	margin: 0; 
@@ -100,8 +104,43 @@ h4 {
 	font-size: 14px;
 	letter-spacing: normal;
 }
+
+/*
+ * Events Calendar Page
+*/
+main.events-calendar-page .main-inner-wrapper {
+	margin-right: 230px;
+	overflow: auto;
+}
+
+main.events-calendar-page .calendar-left-column {
+	float: right;
+	width: 200px;
+}
+
+#tribe-events-header .tribe-events-sub-nav li, #tribe-events-footer .tribe-events-sub-nav .tribe-events-nav-previous {
+float: none !important;
+margin-right: 5px;
+text-align: left;
+white-space: normal !important;
+}
+
 /***** CSS Hooks ***********/
 .pagebuilder-item.marginless {
 	margin: 0 !important;
 	padding: 0 !important;
+}
+
+@media ( max-width: 800px ) {
+  .pagebuilder-item.audience-menu ul.menu > li > ul > li {
+  width: 33.33%;
+  font-size: 14px;
+  letter-spacing: normal;
+  }
+  
+  #front-page-template .cahnrs-slideshow.slideshow-basic .caption .title {
+	font-size: 1.4em !important;
+	padding-top: 20px!important;
+	line-height: 1em;
+	}
 }

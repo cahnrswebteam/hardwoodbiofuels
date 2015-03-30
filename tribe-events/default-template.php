@@ -1,6 +1,13 @@
 <?php get_header();?>
 <?php get_template_part('parts/column','left');?>
-<main id="page-template" class="has_left_nav">
+<main id="page-template" class="has_left_nav events-calendar-page">
+<div class="calendar-left-column">
+<?php if( is_active_sidebar( 'events-sidebar' ) ) {
+	
+	dynamic_sidebar( 'events-sidebar' );
+	
+}; ?>
+</div>
 	<div class="main-inner-wrapper">
 <div id="page-builder" class="layout-builder-wrap">
 	 <section class="row column-layout-1 single">
@@ -17,7 +24,6 @@
 	</section>
 </div>
 </div>
-
 
 <?php //get_template_part('parts/loop','basic');?>
 </main>

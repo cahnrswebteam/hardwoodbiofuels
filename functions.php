@@ -2,10 +2,15 @@
 class ahb_site_settings{
 	
 	public function init(){ 
+	
+		\date_default_timezone_set('America/Los_Angeles');
+		
 		$this->url = \get_stylesheet_directory_uri();
 		add_action( 'wp_enqueue_scripts', array( $this , 'init_theme_scripts' ) );
 		add_action( 'widgets_init', array( $this , 'add_sidebars' ) );
 		add_action( 'init' , array( $this , 'ahbwp_init' ) );
+		
+		add_filter( 'tribe_events_event_schedule_details' , array( $this , 'ahb_filter_date' ) );
 		
 		if ( !is_admin() ){
 			\add_action( 'template_redirect', array( $this , 'ahb_redirect' ) );
@@ -15,6 +20,14 @@ class ahb_site_settings{
     		\add_action( 'load-post-new.php', array( $this , 'add_metabox' ) );
 		}
 	}
+	
+	public function ahb_filter_date( $the_date ) {
+		
+		
+		
+		return $the_date . ' ' . date( 'T' );
+		
+	} // end ahb_filter_date 
 	
 	public function ahbwp_init(){
 		
@@ -50,13 +63,13 @@ class ahb_site_settings{
 		
 		wp_enqueue_script( 'hardwoodbiofuels_ajax_js',  get_template_directory_uri() . '/js/ajax.js', array(), '2.0.0', true );
 		                 
-		wp_register_style( 'ahb_css_header', $this->url.'/css/header.css', array(), '2.1.0' );
+		wp_register_style( 'ahb_css_header', $this->url.'/css/header.css', array(), '2.1.1' );
 		wp_enqueue_style( 'ahb_css_header' );
 		
-		wp_register_style( 'ahb_css_footer', $this->url.'/css/footer.css', array(), '2.1.0' );
+		wp_register_style( 'ahb_css_footer', $this->url.'/css/footer.css', array(), '2.1.1' );
 		wp_enqueue_style( 'ahb_css_footer' );
 		
-		wp_register_style( 'ahb_css_content', $this->url.'/css/content.css', array(), '2.1.0' );
+		wp_register_style( 'ahb_css_content', $this->url.'/css/content.css', array(), '2.1.1' );
 		wp_enqueue_style( 'ahb_css_content' );
 		
 		/**************************** 
@@ -135,6 +148,16 @@ class ahb_site_settings{
         	'class' => '',
 			'before_widget' => '<li class="widget %2$s">',
 			'after_widget'  => '</li>',
+			'before_title'  => '',
+			'after_title'   => '' 
+		);
+		$sideArray[] = array(
+			'name'	=> __( 'Events Sidebar' ),
+			'id' => 'events-sidebar',
+			'description' => 'Sidebar for Events',
+        	'class' => '',
+			'before_widget' => '',
+			'after_widget'  => '',
 			'before_title'  => '',
 			'after_title'   => '' 
 		);
