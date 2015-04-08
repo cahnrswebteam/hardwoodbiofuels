@@ -4,7 +4,7 @@ Theme URI: http://hardwoodbiofuels.org
 Author: CAHNRS Communication: Danial Bleile
 Author URI: http://wordpress.org/
 Description: Custom Theme for Advanced Hardwood Biofuels.
-Version: 1.1
+Version: 1.0.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
@@ -122,7 +122,398 @@ main.events-calendar-page .calendar-left-column {
 float: none !important;
 margin-right: 5px;
 text-align: left;
-white-space: normal !important;
+white-space: normal !important; 
+}
+
+/*
+ * Slideshow
+*/
+
+
+
+.slideshow {
+	display: block;
+}
+
+.slideshow .slide-image-wrapper {
+	height: 449px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-color: #000;
+}
+.slideshow .slide-image-wrapper img { 
+	visibility: hidden;
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+
+
+
+.slideshow-nav img{
+	display: none;
+}
+
+#project-slideshow {
+	position: relative;
+	font-family: 'Lato', sans-serif;
+	margin-bottom: 2rem;
+}
+
+#project-slideshow .slideshow-wrapper {
+	position: relative;
+	margin-right: 250px;
+}
+
+#project-slideshow .slide {
+	position: relative;
+	width: 100%;
+}
+
+#project-slideshow .slideshow-nav a {
+	display: block;
+	height: 89px;
+	line-height: 89px;
+	margin-bottom: 1px;
+	padding: 0 0 0 2rem;
+	color: #fff;
+	font-size: 1.6rem;
+	background-color: #6a90c1;
+}
+
+#project-slideshow .slideshow-nav a:first-child {
+	display: none;
+}
+
+#project-slideshow .slideshow-nav a.active {
+	background-color: #344b6c;
+	color: #efd591;
+}
+
+#project-slideshow .slideshow-nav {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 250px;
+	border-left: 6px solid #fff;
+	height: 100%;
+	z-index: 100;
+}
+
+#project-slideshow .slide-caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: rgba( 52 , 75 , 108 , 0.8 );
+	padding: 1rem 0 2rem;
+}
+
+#project-slideshow .slide-caption h4 {
+	color: #fff;
+	font-size: 3rem;
+	line-height: 3rem;
+	font-weight: normal;
+	margin: 0 2.5rem;
+	padding: 0 0 1rem;
+}
+
+#project-slideshow .slide-caption .caption-text {
+	color: #f4e3b2;
+	font-size: 0.9rem;
+	line-height: 1.2rem;
+	font-weight: bold;
+	margin: 0 200px 0 2.5rem;
+}
+
+#project-slideshow .slide-caption > a {
+	position: absolute;
+	  color: #fff;
+	  border: 1px solid #ccc;
+	  padding: 0.25rem 1rem;
+	  background: rgba( 0 , 0 , 0 , 0.3 );
+	  bottom: 1.5rem;
+	  right: 2rem;
+	  text-transform: uppercase;
+	  font-size: 0.7rem;
+	  font-weight: bold;
+}
+#project-slideshow .title-caption {
+	display: table;
+  margin: 0 auto;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+#project-slideshow .title-caption > div {
+	display: table-row;
+}
+
+
+#project-slideshow .title-caption  a {
+	display: table-cell;
+	height: 449px;
+	vertical-align: middle;
+	text-align: center;
+	  color: #fff;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  opacity: 0.7;
+    line-height: 2rem;
+
+}
+
+#project-slideshow .title-caption  a span {
+  font-size: 8rem;
+  font-weight: bold;
+  vertical-align: middle;
+}
+/*
+ * Sections
+*/
+
+#front-page-caption {
+	display: table;
+	width: 100%;
+	font-family: 'Lato', sans-serif;
+	margin-bottom: 2rem;
+}
+
+#front-page-caption .caption-wrapper {
+	display: table-row;
+}
+
+#front-page-caption .caption-wrapper > div {
+	display: table-cell;
+	color: #0070c0;
+	vertical-align: middle;
+}
+
+#front-page-caption .caption-title {
+	font-size: 5rem;
+  	padding: 0 1rem 0 0;
+	line-height: 5rem;
+}
+
+#front-page-caption .caption-summary {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  font-weight: bold;
+}
+
+/*#audience-bar h3 {
+	color: #fff;
+	font-weight: normal;
+	font-size: 0.9rem;
+}
+
+#audience-bar {
+	margin-bottom: 1.5rem;
+}
+
+#audience-bar h3 span{
+	color: #fff;
+	font-weight: bold;
+	font-size: 1.2rem;
+}*/
+
+#audience-bar {
+	margin-bottom: 0.5rem;
+	font-family: 'Lato', sans-serif;
+}
+
+#audience-bar a {
+	display: inline-block;
+	vertical-align: top;
+	width: 24.5%;
+	margin-right: 0.5%;
+	min-height: 130px;
+	padding: 0;
+	text-align: center;
+	position: relative;
+	background-position: bottom center !important;
+	background-size: contain !important;
+}
+#audience-bar a > span {
+	display: block;
+	margin: 0 0.5rem;
+	padding-top: 2.5rem;
+	position: relative;
+  	z-index: 100;
+}
+#audience-bar a > span span {
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  position: relative;
+  z-index: 100;
+}
+#audience-bar a > span.detail {
+	display: none;
+	margin: 0 1rem;
+}
+
+#audience-bar a:hover:after{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.3;
+	top: 0;
+	left: 0;
+	ma
+}
+
+#audience-bar a:hover > span.detail {
+	display: block;
+	padding-top: 1.5rem;
+}
+
+#audience-bar a:hover > span.intro {
+	display: none;
+}
+
+/*#audience-bar .content-wrapper {
+	display: table;
+	width: 100%;
+}
+
+#audience-bar .audience-sets {
+	display: table-row;
+}
+
+#audience-bar .audience-item {
+	display: table-cell;
+	text-align: center;
+	color: #fff;
+	background: #00C;
+	border-left: 3px solid #fff;
+	vertical-align: middle;
+	height: 150px;
+	width: 25%;
+}
+
+#audience-bar .audience-item div {
+	display: none;
+}*/
+
+#resource-bar {
+	display: table;
+	width: 100%;
+	margin-bottom: 0.5rem;
+	font-family: 'Lato', sans-serif;
+}
+
+#resource-bar .content-wrapper {
+	display: table-row;
+}
+
+#resource-bar .slideshow-nav,
+#resource-bar .resource-title,
+#resource-bar .resource-slider-wrapper {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#resource-bar .resource-slider-wrapper {
+	/*width: 60%;*/
+}
+
+#resource-bar .slideshow-nav {
+	width: 30px;
+	text-align: right;
+}
+
+#resource-bar .slideshow-nav span {
+	width: 0; 
+	height: 0; 
+	border-top: 25px solid transparent;
+	border-bottom: 25px solid transparent; 
+	border-right:20px solid #ccc; 
+	display: inline-block; 
+}
+
+
+#resource-bar .slideshow-nav.slideshow-next span {
+ 
+	border-right: none; 
+border-left:20px solid #ccc; 
+}
+
+#resource-bar .resource-slider {
+	margin: 0 10px;
+}
+
+#resource-bar .resource-title {
+	padding-right: 6rem;
+	color: #0070c0;
+	font-size: 4rem;
+	line-height: 4rem;
+	font-weight: 300; 
+}
+
+#resource-bar .slider-slide {
+	display: table;
+	width: 100%;
+}
+
+#resource-bar .slider-slide {
+	display: table;
+	width: 100%;
+}
+
+#resource-bar figure {
+	display: table-row;
+}
+
+#resource-bar figcaption,
+#resource-bar .slider-image {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#resource-bar .slider-image {
+	width: 140px;
+}
+
+#resource-bar .slider-image img {
+	width: 100%;
+	height: auto;
+}
+
+#resource-bar figcaption {
+	padding: 0 0 0 0.5rem ;
+	font-size: 0.9rem;
+}
+
+body.home #primary-content h2 {
+    background: #d2dbe6;
+  padding: 1rem 2rem;
+  color: #b11116;
+  font-weight: normal;
+  font-size: 1.3rem;
+  border: 2px solid #9fb9d2;
+}
+
+body.home ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+body.home #primary-content .widget_TribeEventsListWidget h4 a, 
+body.home #primary-content .tribe-events-list-widget h4 a {
+  color: #000 !important;
+}
+body.home ul .cc-title, .cc-title > a, h3, h3 > a {
+  color: #000 !important;
 }
 
 /***** CSS Hooks ***********/
@@ -143,4 +534,109 @@ white-space: normal !important;
 	padding-top: 20px!important;
 	line-height: 1em;
 	}
+
+	#project-slideshow .slideshow-nav {
+	  position: relative;
+	  width: auto;
+	  border-left: none;
+	  height: auto;
+	  border-top: 2px solid #fff;
+	}
+	
+	#project-slideshow .slideshow-wrapper {
+	  margin-right: 0;
+	}
+	
+	#project-slideshow .slideshow-nav a {
+	  display: inline-block;
+	  height: 89px;
+	  line-height: 89px;
+	  width: 19.75%;
+	  padding: 0;
+	  font-size: 0.9rem;
+	  text-align: center;
+	  margin-right: 0.25%;
+	}
+	
+	#audience-bar a > span span {
+	  font-size: 1rem;
+	  letter-spacing: 0px;
+	}
+	
+	#resource-bar .resource-title {
+	  padding-right: 2rem;
+	}
+}
+
+@media ( max-width: 700px ) {
+	#resource-bar,
+	#resource-bar .content-wrapper,
+	#resource-bar .resource-title {
+  		display: block;
+  		vertical-align: middle;
+	}
+	
+	#resource-bar .slideshow-nav,
+	#resource-bar .resource-slider-wrapper {
+  		display: inline-block;
+  		vertical-align: top;
+	}
+	
+	#resource-bar .slideshow-nav {
+		width: 5%;
+		padding-top: 45px;
+	}
+	#resource-bar .resource-slider-wrapper {
+		width: 90%;
+	}
+}
+
+@media ( max-width: 600px ) {
+	
+	#project-slideshow .slideshow-nav a {
+	  font-size: 0.75rem;
+	  font-weight: bold; 
+	}
+	
+	header.primary .more-nav-wrapper > li {
+	  display: block;
+	  width: auto;
+	  margin: 0 1%;
+	}
+	
+	#front-page-caption .caption-summary {
+	  font-size: 1rem;
+	  line-height: 1.6rem;
+	  font-weight: bold;
+	}
+	
+	#front-page-caption,
+	#front-page-caption .caption-wrapper,
+	#front-page-caption .caption-wrapper > div {
+	  display: block;
+	}
+	
+	#audience-bar a {
+
+	  width: 49.5%;
+	  margin-right: 0.5%;
+	  border-bottom: 3px solid #fff;
+	}
+	
+	#front-page-caption,
+	#front-page-caption .caption-wrapper,
+	#front-page-caption .caption-wrapper > div {
+	  display: block;
+	}
+}
+
+@media ( max-width: 500px ) {
+	
+	#project-slideshow .slideshow-nav a {
+	  font-size: 0.75rem;
+	  width: 33%;
+	  margin-right: 0.33%;
+	}
+	
+	
 }
