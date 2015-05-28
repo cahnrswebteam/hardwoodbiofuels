@@ -94,7 +94,8 @@ section#site-column-left {
 .sustainability #secondary-navigation-menu > li > a { 
 	background-image: url(../images/leaf-icons/sustainability.png) no-repeat bottom right;; 
 	}
-	
+
+#audience-bar .audience-item.educators,
 .pagebuilder-item.audience-menu .menu-item-3893 a,
 .educators #secondary-navigation-menu > li > a { 
 	color: #fff; 
@@ -103,6 +104,8 @@ section#site-column-left {
 	background-position: bottom right;
 	background-repeat: no-repeat;
 	}
+	
+#audience-bar .audience-item.policy-makers,
 .pagebuilder-item.audience-menu .menu-item-4009 a,
 .policy-makers #secondary-navigation-menu > li > a { 
 	color: #fff; 
@@ -134,6 +137,7 @@ section#site-column-left {
 	background-position: bottom right;
 	background-repeat: no-repeat;
 	}
+#audience-bar .audience-item.espanol,
 .pagebuilder-item.audience-menu .menu-item-4011 a,
 .espanol #secondary-navigation-menu > li > a { 
 	color: #fff; 
@@ -142,6 +146,7 @@ section#site-column-left {
 	background-position: bottom right;
 	background-repeat: no-repeat;
 	}
+#audience-bar .audience-item.environment,
 .pagebuilder-item.audience-menu .menu-item-4008 a,
 .environment-audience #secondary-navigation-menu > li > a { 
 	color: #fff; 
@@ -331,7 +336,7 @@ ul.cahnrs-list-view .list-excerpt {
 
 
 @media ( max-width: 960px ) {
- 	#primary-content.content-wrap { width: 98%; margin: 0 auto;}
+ 	#primary-content.content-wrap { width: 94%; margin: 0 auto;}
 }
 
 @media ( max-width: 500px ) {

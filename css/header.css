@@ -64,6 +64,15 @@ form.header-search .search-box { border: 1px solid #d71920; border-radius: 4px; 
   header.primary nav.more {display: block;}
 }
 
+@media ( max-width: 600px ) {
+	
+	header.primary .more-nav-wrapper > li {
+	  display: block;
+	  width: auto;
+	  margin: 0 1% 4px;
+	}
+}
+
 @media ( max-width: 500px ) {
   header.primary .primary-nav { display: none;}
   header.primary .more-nav {display: inline-block; position: relative; right:0px; top: 0; width: 75%;}
@@ -72,7 +81,6 @@ form.header-search .search-box { border: 1px solid #d71920; border-radius: 4px; 
   header.primary .more-item span.more {display: none;}
   header.primary .more-item img {height: 14px;}
   header.primary .banner-wrapper {position: relative; padding-top: 0;}
-  header.primary nav.more {width: 95%;}
   form.header-search{ display: none; }
 }
 /**** GRADIENTS **************************/
