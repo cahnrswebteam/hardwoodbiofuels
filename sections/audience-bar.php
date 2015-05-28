@@ -8,7 +8,7 @@
                 <span class="detail">AHB research on biodiversity, soil, water, and the carbon cycle.</span>
             </a><a href="http://hardwoodbiofuels.org/educators/" class="audience-item educators">
             	<span class="intro">INFORMATION <em>for</em><br /><span>Educators k-12</span></span>
-                <span class="detail">Engaging bioenergyand bioproducts activities for K-12 students.</span>
+                <span class="detail">Engaging bioenergy and bioproducts activities for K-12 students.</span>
             </a><a href="http://hardwoodbiofuels.org/en-espanol/" class="audience-item espanol">
             	<span class="intro">INFORMACIÓN <em>para</em><br /><span>En español</span></span>
                 <span class="detail">Información en español sobre biocombustibles se encuentra disponible aqui.</span>

@@ -59,17 +59,17 @@ class ahb_site_settings{
 		
 		wp_enqueue_script('jquery');
 		
-		wp_enqueue_script( 'hardwoodbiofuels_js',  get_template_directory_uri() . '/js/hardwoodbiofuels.js', array(), '2.0.0', true );
+		wp_enqueue_script( 'hardwoodbiofuels_js',  get_template_directory_uri() . '/js/hardwoodbiofuels.js', array(), '2.0.1', true );
 		
-		wp_enqueue_script( 'hardwoodbiofuels_ajax_js',  get_template_directory_uri() . '/js/ajax.js', array(), '2.0.0', true );
+		wp_enqueue_script( 'hardwoodbiofuels_ajax_js',  get_template_directory_uri() . '/js/ajax.js', array(), '2.0.1', true );
 		                 
-		wp_register_style( 'ahb_css_header', $this->url.'/css/header.css', array(), '2.1.0' );
+		wp_register_style( 'ahb_css_header', $this->url.'/css/header.css', array(), '2.2.0' );
 		wp_enqueue_style( 'ahb_css_header' );
 		
-		wp_register_style( 'ahb_css_footer', $this->url.'/css/footer.css', array(), '2.1.0' );
+		wp_register_style( 'ahb_css_footer', $this->url.'/css/footer.css', array(), '2.2.0' );
 		wp_enqueue_style( 'ahb_css_footer' );
 		
-		wp_register_style( 'ahb_css_content', $this->url.'/css/content.css', array(), '2.1.0' );
+		wp_register_style( 'ahb_css_content', $this->url.'/css/content.css', array(), '2.2.0' );
 		wp_enqueue_style( 'ahb_css_content' );
 		
 		/**************************** 
