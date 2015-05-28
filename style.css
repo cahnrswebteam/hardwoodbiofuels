@@ -4,7 +4,7 @@ Theme URI: http://hardwoodbiofuels.org
 Author: CAHNRS Communication: Danial Bleile
 Author URI: http://wordpress.org/
 Description: Custom Theme for Advanced Hardwood Biofuels.
-Version: 1.0.3
+Version: 1.0.4
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
@@ -166,7 +166,7 @@ white-space: normal !important;
 
 #project-slideshow .slideshow-wrapper {
 	position: relative;
-	margin-right: 250px;
+	margin-right: 275px;
 }
 
 #project-slideshow .slide {
@@ -198,7 +198,7 @@ white-space: normal !important;
 	position: absolute;
 	top: 0;
 	right: 0;
-	width: 250px;
+	width: 275px;
 	border-left: 6px solid #fff;
 	height: 100%;
 	z-index: 100;
